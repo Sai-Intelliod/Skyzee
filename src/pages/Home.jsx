@@ -25,10 +25,10 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className="glass-panel p-8 md:p-16 max-w-5xl mx-auto flex flex-col items-center"
+            className="max-w-5xl mx-auto flex flex-col items-center"
           >
             <p className="text-antique-gold uppercase tracking-[0.3em] text-sm md:text-base font-semibold font-sans mb-6">Skyzee Projects</p>
-            <h1 className="text-ivory font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 text-center text-shadow-sm">
+            <h1 className="text-ivory font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-8 text-center text-shadow-sm">
               At Skyzee Projects, we craft more than just buildings &mdash; we craft experiences.
             </h1>
             <Link to="/services">
@@ -184,7 +184,7 @@ const Home = () => {
         </div>
         <div className="text-center mt-16">
            <Link to="/about">
-              <Button variant="dark">Meet the Team</Button>
+              <Button variant="secondary">Meet the Team</Button>
            </Link>
         </div>
       </Section>
