@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --royal-navy: #0A1A33;
+    --antique-gold: #B9975B;
+    --ivory: #F6F1E7;
+    --black-accent: #0B0B0B;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-ivory text-black-accent font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-royal-navy;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: rgba(246, 241, 231, 0.08);      /* ivory tint, low opacity, on dark sections */
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(185, 151, 91, 0.25); /* faint gold border */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(11, 11, 11, 0.35);
+    transition: all 0.3s ease;
+  }
+  
+  .glass-panel-light {
+    background: rgba(10, 26, 51, 0.06);         /* navy tint, low opacity */
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+    border: 1px solid rgba(185, 151, 91, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(10, 26, 51, 0.12);
+    transition: all 0.3s ease;
+  }
+}
