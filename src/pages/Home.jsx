@@ -21,7 +21,7 @@ const Home = () => {
             className="w-full h-full object-cover opacity-60"
             poster={heroBg}
           >
-            <source src="/A_cinematic_fast_forward_time.mp4" type="video/mp4" />
+            <source src="/A_cinematic_fast_forward_time1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
