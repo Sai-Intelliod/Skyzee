@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <main className="w-full">
-      {/* Page Hero */}
+      {/* Page Hero section*/}
       <section className="bg-royal-navy pt-32 pb-24 md:pt-40 md:pb-32 border-b border-white/5">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
           <motion.div

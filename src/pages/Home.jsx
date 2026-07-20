@@ -13,11 +13,17 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-royal-navy">
         <div className="absolute inset-0 z-0 bg-royal-navy/20">
-          <img 
-            src={heroBg} 
-            alt="Luxury modern tower at dusk" 
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover opacity-60"
-          />
+            poster={heroBg}
+          >
+            <source src="/A_cinematic_fast_forward_time.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         
         <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 text-center flex flex-col items-center">
